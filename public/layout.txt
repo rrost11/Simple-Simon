@@ -1,0 +1,27 @@
+
+
+Creat a random memory based "follow me" game with four different colors.
+
+Name each round that the user is on
+
+Create a Start button to begin the game
+
+Create a reset button to clear the current game
+
+Creat four different color buttons that form a large square
+
+When the start button is pressed - the computer will select a random color button and light it up
+
+The user has a certain length of time to correctly repeat lighting up the button the computer selected
+
+If the user selects the correct button, the computer will indicate an increase in level, the computer will then randomly select and add one more button to light up than the previous round
+
+If the user selects the wrong number, the computer sends a "Game Over" alert
+
+When the user acknoledges the Game Over alert, the game resets to start and the level resets to 1
+
+
+create begginer, intermediate, and advanced modes
+
+each mode has different timing
+
