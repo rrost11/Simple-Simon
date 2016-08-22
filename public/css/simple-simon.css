@@ -8,19 +8,43 @@ body {
 }
 
 h2 {
-
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: lightgrey;
     align-content: center;
 }
 
+p {
+    color: black;
+    font-weight: 400;
+    font-family: 'Monteserrat', sans-serif;
+}
+
+#box1 {
+    background-color: lightgray;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 40%;
+    opacity: .7;
+}
+
+#box2 {
+    background-color: lightgray;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 30%;
+    opacity: .7;
+
+}
+
 #start-button {
     border-radius: 5px;
     box-shadow: 1px 3px 5px #666666;
-    color: #ffffff;
-    font-size: 13px;
-    background: #7f8c8d;
+    color: black;
+    font-size: 14px;
+    background: lime;
     padding: 10px 20px 10px 20px;
     align-content: ;
 }
@@ -36,10 +60,14 @@ h2 {
     margin-bottom: 1%;
 }
 
+.game-options {}
+
+.game-info {}
+
 
 /*Game Button Colors and Game Button Colors "When Lit Up"*/
 
-.lit{
+.lit {
     opacity: 1;
 }
 
@@ -48,31 +76,28 @@ h2 {
     opacity: .6;
 }
 
-
-
 .blue {
     background: #0000ff;
     opacity: .6;
 }
-
-
 
 .green {
     background: #00ff00;
     opacity: .6;
 }
 
-
-
 .yellow {
     background: #ffff00;
     opacity: .6;
 }
 
-.red:hover, .blue:hover, .green:hover, .yellow:hover {
+.red:hover,
+.blue:hover,
+.green:hover,
+.yellow:hover {
     border: 2px solid black;
 }
 
 #start-button:hover {
-    border: 4px solid black;
+    border: 2px solid black;
 }
