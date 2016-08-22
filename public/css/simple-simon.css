@@ -20,6 +20,10 @@ p {
     font-family: 'Monteserrat', sans-serif;
 }
 
+p[data-action="lose"] {
+    display: none;
+}
+
 #box1 {
     background-color: lightgray;
     text-align: center;
@@ -38,6 +42,8 @@ p {
     opacity: .7;
 
 }
+
+
 
 #start-button {
     border-radius: 5px;
@@ -60,11 +66,9 @@ p {
     margin-bottom: 1%;
 }
 
-.game-options {}
-
-.game-info {}
 
 
+/* 
 /*Game Button Colors and Game Button Colors "When Lit Up"*/
 
 .lit {
@@ -74,21 +78,28 @@ p {
 .red {
     background: #ff0000;
     opacity: .6;
+    transition: opacity 250ms ease;
 }
 
 .blue {
     background: #0000ff;
     opacity: .6;
+    transition: opacity 250ms ease;
+    clear:right;
+
+
 }
 
 .green {
     background: #00ff00;
     opacity: .6;
+    transition: opacity 250ms ease;
 }
 
 .yellow {
     background: #ffff00;
     opacity: .6;
+    transition: opacity 250ms ease;
 }
 
 .red:hover,
@@ -100,4 +111,8 @@ p {
 
 #start-button:hover {
     border: 2px solid black;
+}
+
+.hoverable:hover {
+    cursor: pointer;
 }
