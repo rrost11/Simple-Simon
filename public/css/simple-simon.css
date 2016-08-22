@@ -1,0 +1,70 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    background-image: url("/images/desk.png");
+    background-size: cover;
+    background-repeat: 'no' - repeat;
+}
+
+h2 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: lightgrey;
+    align-content: center;
+}
+
+#start-button {
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px #666666;
+    color: #ffffff;
+    font-size: 13px;
+    background: #7f8c8d;
+    padding: 10px 20px 10px 20px;
+    align-content: ;
+}
+
+.gamebutton {
+    width: 12%;
+    height: 12%;
+    border-radius: 20px;
+    box-shadow: 1px 3px 5px white;
+    padding-bottom: 10%;
+    margin-left: .5%;
+    margin-right: .5%;
+    margin-bottom: 1%;
+}
+
+
+/*Game Button Colors and Game Button Colors "When Lit Up"*/
+
+.lit{
+    opacity: 1;
+}
+
+.red {
+    background: #ff0000;
+    opacity: .6;
+}
+
+
+
+.blue {
+    background: #0000ff;
+    opacity: .6;
+}
+
+
+
+.green {
+    background: #00ff00;
+    opacity: .6;
+}
+
+
+
+.yellow {
+    background: #ffff00;
+    opacity: .6;
+}
