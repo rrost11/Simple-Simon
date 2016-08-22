@@ -7,10 +7,10 @@ body {
     background-repeat: 'no' - repeat;
 }
 
-h2 {
+h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: lightgrey;
+    color: darkblue;
     align-content: center;
 }
 
@@ -24,38 +24,28 @@ p[data-action="lose"] {
     display: none;
 }
 
-#box1 {
+.game-info {
     background-color: lightgray;
     text-align: center;
     display: block;
     margin: auto;
     width: 40%;
-    opacity: .7;
-}
-
-#box2 {
-    background-color: lightgray;
-    text-align: center;
-    display: block;
-    margin: auto;
-    width: 30%;
-    opacity: .7;
-
+    opacity: .8;
 }
 
 
-
-#start-button {
+#begin-button {
     border-radius: 5px;
     box-shadow: 1px 3px 5px #666666;
     color: black;
     font-size: 14px;
     background: lime;
     padding: 10px 20px 10px 20px;
-    align-content: ;
+
+    
 }
 
-.gamebutton {
+.tile {
     width: 12%;
     height: 12%;
     border-radius: 20px;
@@ -67,39 +57,32 @@ p[data-action="lose"] {
 }
 
 
-
 /* 
 /*Game Button Colors and Game Button Colors "When Lit Up"*/
 
 .lit {
-    opacity: 1;
+    opacity: ..6;
+    transition: opacity 250ms ease;
 }
 
 .red {
     background: #ff0000;
-    opacity: .6;
-    transition: opacity 250ms ease;
+    opacity: 1;
 }
 
 .blue {
     background: #0000ff;
-    opacity: .6;
-    transition: opacity 250ms ease;
-    clear:right;
-
-
+    opacity: 1;
 }
 
 .green {
     background: #00ff00;
-    opacity: .6;
-    transition: opacity 250ms ease;
+    opacity: 1;
 }
 
 .yellow {
     background: #ffff00;
-    opacity: .6;
-    transition: opacity 250ms ease;
+    opacity: 1;
 }
 
 .red:hover,
