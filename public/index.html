@@ -9,25 +9,37 @@
 </head>
 
 <body>
-    <br>
-    <br>
+    
+    
     <img src="http://www.auplod.com/u/ouplda74c31.png" alt="Image" border="0" />
-    <br>
-    <br>
-    <br>
-    <button id="start-button" class="btn-play">Start Game</button>
-    <h2 id="data-round">Level:   </h2>
-    <br>
+    
+    <div id="box1" class="game-options">
+        <h3>Game Options:</h3>
+        <input type="radio" name="mode" value="normal" checked>Normal
+        
+        <input type="radio" name="mode" value="sound-only">Sound Only
+        
+        <input type="radio" name="mode" value="light-only">Light Only
+        
+        <input type="radio" name="mode" value="free-board">Free board
+    </div>
+    <div id="box2" class="game-info">
+        <h3>Level:  <span data-round="0">0</span></h3>
+        <button id="start-button" data-action="start">Start</button>
+        <p data-action="lose">Sorry, you lost after <span data-round="0"></span> rounds!</p>
+    </div>
     <div>
         <div class="container-top">
-            <button  data-tile="1" class="gamebutton tile red"></button>
-            <button  data-tile="2" class="gamebutton tile blue"></button>
+            <button data-tile="1" class="gamebutton tile red"></button>
+            <button data-tile="2" class="gamebutton tile blue"></button>
         </div>
         <div class="container-bottom">
-            <button  data-tile="3" class="gamebutton tile green"></button>
-            <button  data-tile="4" class="gamebutton tile yellow"></button>
+            <button data-tile="3" class="gamebutton tile green"></button>
+            <button data-tile="4" class="gamebutton tile yellow"></button>
         </div>
     </div>
+    
+    <div data-action="sound"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/js/simple-simon.js"></script>
 </body>
