@@ -1,6 +1,8 @@
-"use strict"
+"use strict";
 
-var Simon = {
+"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
+
+var simon = {
     sequence: [],
     copy: [],
     round: 0,
@@ -12,9 +14,7 @@ var Simon = {
         $('[data-action=start]').on('click', function() {
             that.startGame();
         });
-        $('h3[name=mode]').on('change', function(e) {
-            that.changeMode(e);
-        });
+    
     },
 
     startGame: function() {
@@ -22,7 +22,7 @@ var Simon = {
         this.copy = [];
         this.round = 0;
         this.active = true;
-        $('start-button[data-action="lose"]').hide();
+        $('.start');'[data-action="lose"]'.hide();
         this.newRound();
     },
 
@@ -62,13 +62,11 @@ var Simon = {
 
     endGame: function() {
         // notify the user that game is over and the "round" text to zero
-        $('h2[data-action=lose]').show();
+        $('game-info[data-action=lose]').show();
         $($('[data-round]').get(0)).text('0');
     },
 
-    changeMode: function(e) {
-        this.mode = e.target.value;
-    },
+
 
     /*----------------- Helper functions -------------------*/
 
@@ -92,7 +90,7 @@ var Simon = {
         $('[data-tile]').addClass('hoverable');
     },
 
-    // prevent user from interacting until sequence is done animating
+    // prevent user from interacting until sequence is finished
     deactivateSimonBoard: function() {
         if (this.mode !== 'free-board') {
             $('.simon')
@@ -108,6 +106,7 @@ var Simon = {
         var i = 0;
         var that = this;
         var interval = setInterval(function() {
+            that.playSound(sequence[i]);
             that.lightUp(sequence[i]);
 
             i++;
@@ -128,10 +127,22 @@ var Simon = {
 
     },
 
+    playSound: function(tile) {
+      if (this.mode !== 'light-only'){
+        var audio = $('<audio autoplay></audio>');
+        audio.append('<source src="sounds/' + tile + '.wav" type= sounds/c_sharp" />');
+        audio.append('<source src="sounds/' + tile + '.wav" type= audio/d_sharp" />');
+        audio.append('<source src="sounds/' + tile + '.wav" type= audio/f_sharp" />');
+        audio.append('<source src="sounds/' + tile + '.wav" type= audio/g_sharp" />');
+
+        $('[data-action=sound]').html(audio);
+      }
+          },
+
     randomNumber: function() {
         // between 1 and 4
         return Math.floor((Math.random() * 4) + 1);
     }
 };
 
-return Simon;
+return simon;
