@@ -1,2 +1,9 @@
 # Simple-Simon
-Simple Simon is a game of memory skill
+
+Simon is an electronic game of memory skill invented by Ralph H. Baer and Howard J. Morrison, with software programming by Lenny Cope. The original version was manufactured and distributed by Milton Bradley but now the game is currently manufactured by Hasbro. Much of the assembly language was written by Dr. Charles Kapps, who taught computer science at Temple University and also wrote one of the first books on the theory of computer programming. Simon was launched in 1978 at Studio 54 in New York City and was an immediate success, becoming a pop culture symbol of the 1970s and 1980s.
+
+
+This is my interpretation, recreation and tribute to the game using HTML5, CSS3, JavaScript & jQuery.
+
+
+<p><a href="https://commons.wikimedia.org/wiki/File:OriginalSimon.jpg#/media/File:OriginalSimon.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/OriginalSimon.jpg" alt="The game is a a circular disc divided intjln, o four quarter circle buttons each with a different color. In the center are the game mode controls"></a><br>By <a href="https://en.wikipedia.org/wiki/User:Hempdiddy" class="extiw" title="wikipedia:User:Hempdiddy">Hempdiddy</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw" title="wikipedia:">English Wikipedia</a> - Transferred from&nbsp;<span class="plainlinks"><a class="external text" href="//en.wikipedia.org">en.wikipedia</a></span>&nbsp;to Commons&nbsp;by&nbsp;<a href="//commons.wikimedia.org/w/index.php?title=User:Gunst&amp;action=edit&amp;redlink=1" class="new" title="User:Gunst (page does not exist)">Gunst</a>&nbsp;using <a href="//tools.wmflabs.org/commonshelper/" class="extiw" title="toollabs:commonshelper/">CommonsHelper</a>., Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=15329709">https://commons.wikimedia.org/w/index.php?curid=15329709</a></p>
