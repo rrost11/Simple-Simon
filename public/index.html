@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -11,26 +11,29 @@
 </head>
 
 <body>
+<br>
     <img src="http://www.auplod.com/u/ouplda74c31.png" alt="Image" border="0" />
-    
-    <div class="game-info">
-        <h3>Level:  <span data-round="0">0</span></h3>
-        <button id="begin-button" data-action="start">Start</button>
-        <p data-action="lose">Sorry, you lost after <span data-round="0"></span> rounds!</p>
-    </div>
     <br>
-    <div class="gameboard">
-        <div class="simon container-top">
-            <button data-tile="1" class="tile gamebutton red"></button>
-            <button data-tile="2" class="tile gamebutton blue"></button>
+    <div class="container">
+        <div class="game-info">
+            <h2>Round: <span data-round="0">0</span></h2>
+            <button data-action="start" class="button button-primary button-pill">Start</button>
+            <br>
+            <p data-action="lose">Sorry, you lost after <span data-round="0"></span> rounds!</p>
+            <br>
         </div>
-        <div class="simon container-bottom">   
-            <button data-tile="3" class="tile gamebutton green"></button>
-            <button data-tile="4" class="tile gamebutton yellow"></button>
+        <br>
+        <br>
+        <br>
+        <div class="simon">
+            <button class="red tile gamebutton" data-tile="1"></button>
+            <button class="blue tile gamebutton" data-tile="2"></button>
+            <br>
+            <button class="yellow tile gamebutton" data-tile="3"></button>
+            <button class="green tile gamebutton" data-tile="4"></button>
         </div>
     </div>
     <div data-action="sound"></div>
-    
 </body>
 
 </html>
